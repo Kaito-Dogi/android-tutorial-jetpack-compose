@@ -1,4 +1,4 @@
-package app.doggy.jetpackcomposebasics
+package app.doggy.jetpackcomposetutorial
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

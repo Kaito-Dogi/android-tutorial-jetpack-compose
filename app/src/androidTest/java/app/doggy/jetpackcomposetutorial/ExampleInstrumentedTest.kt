@@ -1,4 +1,4 @@
-package app.doggy.jetpackcomposebasics
+package app.doggy.jetpackcomposetutorial
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

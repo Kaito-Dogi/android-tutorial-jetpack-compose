@@ -1,4 +1,4 @@
-package app.doggy.jetpackcomposebasics
+package app.doggy.jetpackcomposetutorial
 
 import org.junit.Test
 
