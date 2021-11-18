@@ -3,6 +3,7 @@ package app.doggy.jetpackcomposetutorial
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
@@ -10,19 +11,24 @@ import androidx.compose.ui.tooling.preview.Preview
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val msg = Message("Android", "Jetpack Compose is fun!")
         setContent {
-            MessageCard("Doggy")
+            MessageCard(msg)
         }
     }
 }
 
 @Composable
-fun MessageCard(name: String) {
-    Text(text = "Hello $name!")
+fun MessageCard(msg: Message) {
+    Column {
+        Text(text = msg.author)
+        Text(text = msg.body)
+    }
 }
 
 @Preview
 @Composable
 fun PreviewMessageCard() {
-    MessageCard(name = "test")
+    val testMag = Message("test", "test is important!")
+    MessageCard(testMag)
 }
